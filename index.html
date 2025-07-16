@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Iniciação Científica na Odontologia - Sâmela</title>
+
+  <!-- Estilos e bibliotecas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      color: #333;
+      background: #fdfdfd url('b2ec1c69-c5f7-49bc-8525-a20f1324ab08.png');
+      background-repeat: repeat;
+      background-size: 300px;
+    }
+
+    header {
+  background: linear-gradient(to right, #800000, #a94442), url('e31a571f-6057-41f9-801f-c0f86ee08af5.png');
+  background-size: cover;
+  background-repeat: repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+    .logos {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .logos img {
+      height: 50px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    header h1 {
+      font-size: 2.6em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .btn {
+      background: #fff;
+      color: #800000;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      background: #f0e9e9;
+      transform: scale(1.08);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #800000;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: slideIn 0.7s ease;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background: #ffffffdd;
+      border-left: 6px solid #800000;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+
+    .quote {
+      font-style: italic;
+      background: #fff8f6cc;
+      border-left: 4px solid #a94442;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(3px);
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto;
+    }
+
+    .gallery img {
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      border: 4px solid #fff;
+      max-width: 90%;
+      max-height: 500px;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+  background: #ececec url('7052ae8b-1360-4dce-8b8f-4019e448cd23.png');
+  background-size: 300px;
+  background-repeat: repeat;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9em;
+  color: #555;
+  border-top: 3px solid #ccc;
+}
+
+    #btnTopo {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #800000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+      z-index: 999;
+      animation: pulse 2s infinite;
+    }
+
+    #btnTopo:hover {
+      background-color: #a94442;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8em; }
+      .logos { position: static; justify-content: center; margin-top: 10px; }
+      section { padding: 40px 15px; }
+      .gallery img { max-width: 100%; }
+    }
+        .info-list div {
+  margin-bottom: 12px;
+  font-size: 1.05em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-list i {
+  color: #800000;
+  min-width: 22px;
+}
+  </style>
+</head>
+
+  <header data-aos="fade-down">
+    <div class="logos">
+      <img src="Novo Projeto (12).png" alt="Logo UEA">
+      <img src="logo-abeno.png" alt="Logo ABENO">
+    </div>
+    <h1>A Iniciação Científica na Formação Odontológica: Relato de Experiência</h1>
+    <p><i class="fas fa-user-graduate"></i> Sâmela Matozinho de Melo</p>
+    <a href="Resumos ABENO - Sâmela.pdf" class="btn" target="_blank"><i class="fas fa-file-pdf"></i> Baixar Resumo</a>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-lightbulb"></i> O que é a Iniciação Científica?</h2>
+    <div class="card">
+      A iniciação científica constitui-se como um instrumento formativo no âmbito da pesquisa acadêmica, representando, na maioria das vezes, a primeira oportunidade de contato do discente com a investigação científica.
+    </div>
+    <div class="quote">
+      “Essa vivência foi transformadora tanto no âmbito pessoal quanto acadêmico, resultando de inquietações próprias da trajetória da incipiente pesquisadora...”
+    </div>
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-07-16 at 09.45.15.jpeg" alt="Sâmela em atividade científica" data-aos="zoom-in">
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-building"></i> Informações do Projeto</h2>
+    <div class="card info-list">
+      <div><i class="fas fa-university"></i> <strong>Instituição:</strong> Escola Superior de Ciências da Saúde – UEA</div>
+      <div><i class="fas fa-cogs"></i> <strong>Programa:</strong> PIICT ESA/UEA</div>
+      <div><i class="fas fa-calendar-alt"></i> <strong>Período:</strong> 2021–2023</div>
+      <div><i class="fas fa-stethoscope"></i> <strong>Área:</strong> Saúde bucal de gestantes e pré-natal odontológico</div>
+      <div><i class="fas fa-clock"></i> <strong>Carga horária:</strong> Aproximadamente 1.440 horas</div>
+    </div>
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-07-16 at 10.18.36.jpeg" alt="Apresentação de trabalho" data-aos="fade-up">
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-list-check"></i> Atividades Desenvolvidas</h2>
+    <div class="card info-list">
+      <div><i class="fas fa-comments"></i> Discussão do objeto de estudo</div>
+      <div><i class="fas fa-project-diagram"></i> Planejamento das atividades</div>
+      <div><i class="fas fa-file-alt"></i> Produção de artigos e resumos</div>
+      <div><i class="fas fa-users"></i> Participação em congressos</div>
+      <div><i class="fas fa-microscope"></i> Aprofundamento técnico e científico</div>
+      <div><i class="fas fa-chalkboard-teacher"></i> Vivência com orientação docente</div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-trophy"></i> Reconhecimento</h2>
+<div class="card">
+  <p><i class="fas fa-award" style="color:#800000; margin-right:8px;"></i> 
+    <strong>Recebeu o Prêmio Dr. Wanderson Miguel Chiesa</strong>, conquistando o <strong>1º lugar</strong> entre os trabalhos do curso de Odontologia durante o 
+    <strong>XIV Congresso Interno de Iniciação Científica e Tecnológica da UEA</strong> (2021–2022).
+  </p>
+</div>
+
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-07-16 at 11.14.58.jpeg" alt="Foto da premiação" data-aos="zoom-in">
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-heart"></i> Contribuições para a Formação</h2>
+    <div class="card info-list">
+      <div><i class="fas fa-brain"></i> Estimula o pensamento crítico</div>
+      <div><i class="fas fa-users"></i> Desenvolve habilidades interpessoais</div>
+      <div><i class="fas fa-lightbulb"></i> Favorece criatividade, comunicação e resiliência</div>
+      <div><i class="fas fa-balance-scale"></i> Concilia teoria e prática clínica</div>
+      <div><i class="fas fa-sync-alt"></i> Rompe métodos tradicionais</div>
+      <div><i class="fas fa-flask"></i> Desperta vocação científica</div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+    <div class="card">
+      O relato valoriza a iniciação científica como diferencial na formação odontológica, promovendo autonomia, formação crítica e responsabilidade social.
+    </div>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>© 2025 - Congresso ABENO</p>
+  </footer>
+
+  <button id="btnTopo" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true
+    });
+
+    const btnTopo = document.getElementById("btnTopo");
+    window.addEventListener("scroll", () => {
+        btnTopo.style.display = document.documentElement.scrollTop > 300 ? "block" : "none";
+    });
+    btnTopo.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    </script>
+
+</body>
+</html>
+
