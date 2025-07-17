@@ -219,7 +219,7 @@
   -ms-hyphens: auto;
 }
 
-/* LEGENDA NAS IMAGENS */
+/* GALERIA COM LEGENDA VISÍVEL COM AOS */
 .gallery {
   display: flex;
   justify-content: center;
@@ -232,6 +232,7 @@
   position: absolute;
   bottom: 10px;
   right: 15px;
+  left: 15px;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   font-size: 0.85em;
@@ -239,8 +240,27 @@
   border-radius: 8px;
   font-style: italic;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  max-width: 90%;
-  text-align: right;
+  max-width: calc(100% - 30px);
+  width: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease-in-out;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.gallery[data-aos][data-aos][data-aos].aos-animate .gallery-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .legenda-imagem {
+    max-width: 70%; /* ou 60%, ajuste como quiser */
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
   </style>
