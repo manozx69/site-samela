@@ -204,6 +204,45 @@
   flex-shrink: 0;
 }
 
+/* AJUSTE DE TEXTO PARA NÃO QUEBRAR PALAVRAS */
+.info-list div,
+.card.info-list div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.05em;
+  gap: 10px;
+  line-height: 1.4;
+  word-break: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* LEGENDA NAS IMAGENS */
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 30px auto;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.85em;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-style: italic;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  max-width: 90%;
+  text-align: right;
+}
+
   </style>
 </head>
 
@@ -213,7 +252,7 @@
       <img src="Sem Título-1.png" alt="Logo ABENO">
     </div>
     <h1>A Iniciação Científica na Formação Odontológica: relato de experiência</h1>
-    <p><i class="fas fa-user-graduate"></i> Sâmela Matozinho de Melo</p>
+    <p><i class="fas fa-user-graduate"></i> Sâmela Matozinho de Melo, Bruna Mirely da Silva Cavalcante, Carla Rafaela, Louis, Gabrielly, Angela, Adriana, Shirley Maria de Araújo Passos</p>
     <a href="Resumos ABENO - Sâmela.pdf" class="btn" target="_blank"><i class="fas fa-file-pdf"></i> Baixar Resumo</a>
   </header>
 
@@ -246,9 +285,11 @@
       <div><i class="fas fa-microscope"></i> Aprofundamento técnico e científico</div>
       <div><i class="fas fa-chalkboard-teacher"></i> Vivência com orientação docente</div>
     </div>
-        <div class="gallery">
-      <img src="WhatsApp Image 2025-07-16 at 10.18.36.jpeg" alt="Apresentação de trabalho" data-aos="fade-up">
-    </div>
+<div class="gallery" data-aos="zoom-in">
+  <img src="WhatsApp Image 2025-07-16 at 10.18.36.jpeg" alt="Sâmela no TCC">
+  <div class="gallery-caption">Sâmela durante a defesa do Trabalho de Conclusão de Curso (2023)</div>
+</div>
+
   </section>
 
   <section data-aos="fade-up">
@@ -260,9 +301,10 @@
   </p>
 </div>
 
-    <div class="gallery">
-      <img src="WhatsApp Image 2025-07-16 at 11.14.58.jpeg" alt="Foto da premiação" data-aos="zoom-in">
-    </div>
+<div class="gallery" data-aos="zoom-in">
+  <img src="WhatsApp Image 2025-07-16 at 11.14.58.jpeg" alt="Foto de premiação">
+  <div class="gallery-caption">Premiada pelo trabalho sobre pré-natal odontológico – UEA (2021)</div>
+</div>
   </section>
 
   <section data-aos="fade-up">
@@ -286,9 +328,10 @@
             <div class="quote">
           “A vivência foi profundamente transformadora, tanto pessoal quanto academicamente, refletindo as inquietações que surgiram ao longo do meu caminho como pesquisadora em formação.”
     </div>
-        <div class="gallery">
-      <img src="WhatsApp Image 2025-07-16 at 09.45.15.jpeg" alt="Sâmela em atividade científica" data-aos="zoom-in">
-    </div>
+<div class="gallery" data-aos="zoom-in">
+  <img src="WhatsApp Image 2025-07-16 at 09.45.15.jpeg" alt="Sâmela na Qualificação">
+  <div class="gallery-caption">Qualificação do projeto de mestrado em Saúde Coletiva sobre Telessaúde - UEA (2025)</div>
+</div>
 
 
   </section>
